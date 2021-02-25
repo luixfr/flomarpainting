@@ -34,7 +34,7 @@ p{
     font-size: 1.2rem;
     color: var(--color4);
 }
-section, footer{
+section{
     background-color: var(--color2);
     box-shadow: 0 1px 1px var(--color4);
 }
@@ -88,7 +88,7 @@ section, footer{
   top: 0;
   background-color: var(--color4);
   color: var(--color1);
-  padding: 0.5em;
+  padding: .5em;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -122,6 +122,9 @@ section, footer{
 }
 #menu, #social-media{
   list-style: none;
+  display: flex;
+  gap: 1em;
+  justify-content: flex-end;
 }
 .menu-item a {
   text-decoration: none;
@@ -136,11 +139,13 @@ section, footer{
   font-weight: bold;
 }
 #navigation.active {
-  padding: 1em;
+  padding:1em 1.5em 1em 4em;
+  z-index: 2;
 }
 #navigation.active #menu,
 #navigation.active #social-media {
   display: flex;
+  font-size: 1.3rem;
 }
 
  #menu,
@@ -197,31 +202,39 @@ main{
 #testimonials{
     padding: 2em;
     text-align: center;
-    background-image: url(https://static.thenounproject.com/png/19278-200.png),url(https://static.thenounproject.com/png/19278-200.png);
-    background-position: right bottom, left top;
-    background-repeat: no-repeat;
 }
 .testimonial{
     padding: 2em;
 }
-footer{
+#footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5em;
+    padding: 2em;
     border: none;
     box-shadow: none;
     text-align: center;
+    background-color: var(--color2);
 }
-footer .subtitle{
-    font-size: 1em;
+#footer .footer-info{
+  display: flex;
+  flex-direction: column;
+  gap: .2em;
+}
+#footer .title{
+  font-size: .92rem;
 }
 .social-media{
     list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 .social-media a{
     text-decoration: none;
     color: black;
+    font-size: 1.3rem;
 }
 
 @keyframes colorize{
@@ -273,5 +286,11 @@ footer .subtitle{
     }
     #about-text p{
         font-size: 1em;
+    }
+    #footer{
+    padding: 1em 4em;
+    }
+    #footer .title{
+      font-size: 1.1rem;
     }
 }
