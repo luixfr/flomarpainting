@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{{headerTags}}}
+    <link rel="stylesheet" href="../styles/contact.css">
+    <title>Flomar Painting</title>
+</head>
+
+<body>
+    <header id="contact-header">
+        <h1 id="logo" class="title">Flomar Painting</h1>
+        {{{navigation}}}
+    </header>
+
+    <main>
+        <form id="contact-form">
+            <h1 class="subtitle">Contact Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ab ipsum cum ipsam incidunt
+                aspernatur maiores</p>
+            <div id="form-inputs">
+                <label for="form-name" class="selected">Name</label>
+                <input require autofocus pattern="^[a-zA-Z ]*$" class="form-input" name="formName" id="form-name"
+                    type="text">
+
+                <label for="form-phone">Phone Number</label>
+                <input pattern="/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im" require
+                    class="form-input" name="formPhone" id="form-phone" type="phone">
+
+                <label for="form-email">Email</label>
+                <input pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" require class="form-input"
+                    name="formEmail" id="form-email" type="email">
+
+                <label for="form-message">Message</label>
+                <textarea pattern="^.{1,500}$" require class="form-input" name="formMessage"
+                    id="form-message"></textarea>
+
+                <button id="sendForm" disabled class="button primary" type="submit">Send</button>
+            </div>
+        </form>
+        <section id="contact-info">
+            <h2 class="subtitle">Eduardo Flores</h2>
+            <ul>
+                <li><a class="icon-mail" href="mailto:flomarpainitgin@gmail.com"> flomarpainitgin@gmail.com</a></li>
+                <li><a class="icon-phone" href="tel:8478009715"> 847-800-9715</a></li>
+                <li><a class="icon-phone" href="tel:8474180740"> 847-418-0740</a></li>
+                <li><a class="icon-phone" href="tel:8477442878"> 847-744-2878</a></li>
+            </ul>
+        </section>
+    </main>
+    {{{footer}}}
+</body>
+
+</html>

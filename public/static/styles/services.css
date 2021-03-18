@@ -1,12 +1,13 @@
 #services-header {
-  background-color: var(--color1);
-  height: 40vh;
+  background-color: var(--color4);
+  height: auto;
 }
 #services-header .call-to-action {
   text-align: center;
 }
 #services-header .call-to-action h2 {
-  color: var(--color4);
+  color: var(--color3);
+  padding: 0.5em;
 }
 #services,
 .service-card {

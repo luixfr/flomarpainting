@@ -30,6 +30,9 @@ border-radius: 5px;
     background-color: var(--color3);
     color: white;
 }
+.button:disabled{
+background-color: #ccc;
+}
 p{
     font-size: 1.2rem;
     color: var(--color4);
@@ -256,7 +259,7 @@ main{
     }
     #navigation{
         background-color: inherit;
-        padding: 2em;
+        margin: 1em 1em 0 0;
     }
     #menu, #social-media{
         font-size: 1.5rem;
